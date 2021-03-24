@@ -1,0 +1,22 @@
+
+# HTID:11677165: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:11677165:
+
+<IfModule mod_rewrite.c>
+    DirectoryIndex index.php
+    Options -MultiViews
+    RewriteBase /
+    RewriteEngine On
+    	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} ^www\.stlproyect\.tk [NC]
+	RewriteRule (.*) https://stlproyect.tk/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+
+
+
+
+
