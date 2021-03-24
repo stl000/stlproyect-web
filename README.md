@@ -1,2 +1,2 @@
 # stlproyect-web
-Aplicación web de stlproyect
+Aplicación web de stlProyect
